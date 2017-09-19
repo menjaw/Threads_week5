@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DemoSynchronization;
+package demoSynchronization;
 
 import static java.time.Clock.system;
 import java.util.Scanner;
@@ -15,18 +15,20 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        //Variables
-        Processor processor1 = new Processor();
+        //VOLATILE
+        VolatileThreads volThread = new VolatileThreads();
         Scanner scanner = new Scanner(System.in);
 
         //runnings
-        processor1.start();
-        System.out.println("Press any key to stop the Thread");
-        scanner.nextLine();
-        processor1.shutDown();
-        System.out.println("Press any key key to start the thread again");
-        scanner.nextLine();
-        processor1.start();
-        
+//        volThread.start();
+//        System.out.println("Press any key to stop the Thread");
+//        scanner.nextLine();
+//        volThread.shutDown();
+
+
+        //SYNCRONIZATION
+        SyncrhonizedThreads syncThread = new SyncrhonizedThreads();
+        syncThread.ThreadsToRun();
+
     }
 }

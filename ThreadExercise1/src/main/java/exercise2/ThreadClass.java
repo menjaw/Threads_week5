@@ -3,15 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Tester;
+package exercise2;
 
 /**
  *
  * @author Menja
  */
-public class TeacherDemo {
-
-    public static void main(String[] args) {
-        Thread t1 = new Thread();
-    }
+public class ThreadClass extends Thread{
+    
 }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DemoSynchronization;
+package demoSynchronization;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -12,7 +12,7 @@ import java.util.logging.Logger;
  *
  * @author Menja
  */
-public class Processor extends Thread {
+public class VolatileThreads extends Thread {
     //This boolean can be cachet and the while-loop can stop checking the state of it and remains true all the time
     //To provent threads to cache, we add 'volatile' keyword to it
     //Now the code works with garanty
@@ -25,7 +25,7 @@ public class Processor extends Thread {
                 System.out.println("Hallo from the processor");
                 Thread.sleep(500);
             } catch (InterruptedException ex) {
-                Logger.getLogger(Processor.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(VolatileThreads.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
