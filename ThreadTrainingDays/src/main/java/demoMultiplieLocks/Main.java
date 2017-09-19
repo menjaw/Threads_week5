@@ -3,13 +3,16 @@
  */
 package demoMultiplieLocks;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Menja
  */
 public class Main {
-
+    
     public static void main(String[] args) {
-        Worker worker = new Worker();
+        new RandomNumberArray().main();
     }
 }
