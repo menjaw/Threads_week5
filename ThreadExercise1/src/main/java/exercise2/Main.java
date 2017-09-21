@@ -10,12 +10,18 @@ package exercise2;
  * @author Menja
  */
 public class Main {
+
     public static void main(String[] args) {
-        Even t1 = new Even();
-        Even t2 = new Even();
-        
-        t1.next();
-        t2.next();
-        
+        Even even = new Even();
+        ThreadClass t1 = new ThreadClass(even);
+        ThreadClass t2 = new ThreadClass(even);
+        ThreadClass t3 = new ThreadClass(even);
+        ThreadClass t4 = new ThreadClass(even);
+
+    
+        t1.start();
+        t2.start();
+        t3.start();
+        t4.start();
     }
 }

@@ -20,10 +20,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         //runnings
-//        volThread.start();
-//        System.out.println("Press any key to stop the Thread");
-//        scanner.nextLine();
-//        volThread.shutDown();
+        volThread.start();
+        System.out.println("Press any key to stop the Thread");
+        scanner.nextLine();
+        volThread.shutDown();
 
 
         //SYNCRONIZATION

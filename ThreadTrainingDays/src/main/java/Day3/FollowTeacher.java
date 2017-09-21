@@ -3,24 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package exercise2;
+package Day3;
+
+import java.util.concurrent.Callable;
 
 /**
  *
  * @author Menja
  */
-public class Even {
-
-    private int n = 0;
-
-    public int next() {
-        n++;
-        n++;
-        return n;
+public class FollowTeacher {
+    public static void main(String[] args) {
+    
     }
-
-    public int getN() {
-        return n;
-    }
-
 }
